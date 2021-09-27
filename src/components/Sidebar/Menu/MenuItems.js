@@ -19,20 +19,25 @@ const Container = styled.div`
 `
 
 const Icon = styled.span`
+    color: ${(props) => !props.active ? props.theme.activeMenu : "#AAA5A5"};
+    font-size: 1rem;
+    margin-right: 1rem;
 
 `
 
 const Title = styled.h1`
-color: ${(props) => props.active ? props.theme.activeMenu : "i"};
+    color: ${(props) => props.active ? props.theme.activeMenu : "#AAA5A5"};
     font-size: 0.9rem;
     font-weight: 300;
+    margin-right: 1rem;
 `
 
 const MenuItems = ({ title, active, icon }) => {
     return (
         <Container active={active}>
+            <Icon className="iconify" data-inline="false" data-icon={`mdi-light:${icon}`}></Icon>
             <Title active={active}>{title}</Title>
-        </Container>
+        </Container >
     );
 }
 

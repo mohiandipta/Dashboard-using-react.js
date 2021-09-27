@@ -10,11 +10,11 @@ const Container = styled.div`
 const Menu = () => {
     return (
         <Container>
-            <MenuItems title='Home' icon='' />
-            <MenuItems title='Deposits' icon='' active />
-            <MenuItems title='Offers' icon='' />
-            <MenuItems title='Payment' icon='' />
-            <MenuItems title='Settings' icon='' />
+            <MenuItems title='Home' icon='home' />
+            <MenuItems title='Deposits' icon='file-multiple' active />
+            <MenuItems title='Offers' icon='gift' />
+            <MenuItems title='Payment' icon='bank' />
+            <MenuItems title='Settings' icon='cog' />
         </Container>
     );
 }
