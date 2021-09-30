@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Profile from './Profile';
 import Menu from './Menu/Menu';
+import ToggleSwitch from './ToggleSwitch';
 
 const Container = styled.div`
     background-color: ${({ theme }) => theme.secondary};
@@ -20,6 +21,7 @@ const Sidebar = () => {
         <Container>
             <Profile />
             <Menu />
+            <ToggleSwitch />
         </Container>
     );
 }
