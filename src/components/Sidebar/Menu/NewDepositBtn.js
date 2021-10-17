@@ -6,12 +6,12 @@ const AddButton = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 25px;
     position: absolute;
-    top: 6rem;
-    right: 7rem;
+    top: 110px;
+    right: 100px;
     cursor: pointer;
 `
 
