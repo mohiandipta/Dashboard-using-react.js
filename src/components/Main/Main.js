@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 import Nav from '../Sidebar/Menu/Nav'
+import NewDepositBtn from '../Sidebar/Menu/NewDepositBtn';
+import Deposits from './Deposits/Deposits';
 
 const Container = styled.div`
     width:  auto;
@@ -13,6 +15,7 @@ const Main = () => {
     return (
         <Container>
             <Nav />
+            <NewDepositBtn />
         </Container>
     );
 }
